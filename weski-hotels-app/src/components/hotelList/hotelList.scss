@@ -1,0 +1,37 @@
+.wrapper {
+  padding: 24px 110px;
+}
+
+.headingBlock {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.sub {
+  margin-top: 4px;
+  color: #666;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.message {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  margin-top: 40px;
+
+  &.error {
+    color: red;
+  }
+}
