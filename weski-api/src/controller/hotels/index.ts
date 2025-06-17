@@ -4,6 +4,9 @@ const API_URL = 'https://gya7b1xubh.execute-api.eu-west-2.amazonaws.com/default/
 
 export async function getHotelsBySize(params: SearchFields): Promise<SearchResponse[]> {
     try {
+        // Uncomment the following lines to simulate a delay for testing purposes
+        // const delay = Math.floor(Math.random() * (1000 - 3000 + 1)) + 3000;
+        // await new Promise(resolve => setTimeout(resolve, delay));
         const response = await axios.post(API_URL, { query: params });
         return response.data?.body?.accommodations || [];
     } catch (err) {
